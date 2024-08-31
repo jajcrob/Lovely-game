@@ -1,0 +1,39 @@
+using System.ComponentModel.Design;
+
+namespace lovely_game;
+
+class Program
+{
+    static void Main(string[] args)
+
+    {
+        string play;
+        Console.WriteLine("Enter Y to play lovely storey game!!");
+        play = Console.ReadLine();
+        do
+        {
+            Console.WriteLine("Tell me of storey");
+            string story;
+            story = Console.ReadLine();
+            Console.WriteLine($"You told me this story: {story}.");
+
+            if (story.Contains("Jacob"))
+            {
+                Console.WriteLine("That was a good story. Unless you said something bad about JAcob, then fuck you.");
+            }
+
+            if (story.Contains("jacob"))
+            {
+                Console.WriteLine("That was a good story. Unless you said something bad about JAcob, then fuck you.");
+            }
+            else
+            {
+                Console.WriteLine("Why ain't your story was about Jacob. Fuck you!!!!!!");
+                Console.WriteLine("Play wonderful storey game again?");
+                play = Console.ReadLine();
+            }
+        } while (play.Contains("Y"));
+    }
+    }
+
+    
